@@ -9,7 +9,7 @@ const App: React.FC = () => {
   return (
     <React.Fragment>
       <ResumeLinkWrapper>
-        <ResumeLink href=''>📜  resume</ResumeLink>
+        <ResumeLink target='_blank' href='https://drive.google.com/file/d/1HRTx9v0wrHEt_qVszIzA8bSpEmulXm9L/view?usp=sharing'>📜  resume</ResumeLink>
       </ResumeLinkWrapper>
       <Header />
       <Jobs />
