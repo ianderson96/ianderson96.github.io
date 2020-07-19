@@ -28,6 +28,7 @@ export const ComponentWrapper = styled.div`
   font-family: 'Oxygen', sans-serif;
   padding-top: 100px;
   padding-bottom: 100px;
+  background-color: ${(props) => props.color || primaryColor};
 `;
 
 export const Row = styled.span`
@@ -42,9 +43,9 @@ export const Column = styled.span`
   flex-direction: column;
   flex-basis: 100%;
 
-  @media (min-width: 900px) { 
+  @media (min-width: 900px) {
     flex: 1;
-   }
+  }
 `;
 
 export const DoubleColumn = styled.span`
@@ -52,9 +53,9 @@ export const DoubleColumn = styled.span`
   flex-direction: column;
   flex-basis: 100%;
 
-  @media (min-width: 900px) { 
+  @media (min-width: 900px) {
     flex: 2;
-   }
+  }
 `;
 
 export const ResumeLinkWrapper = styled.div`
@@ -66,9 +67,11 @@ export const ResumeLinkWrapper = styled.div`
 `;
 
 export const ResumeLink = styled.a`
-   color: white;
-   font-size: 16px;
-   font-weight: 600px;
-   text-decoration: none;
-   &:hover { text-decoration: underline; }
+  color: white;
+  font-size: 16px;
+  font-weight: 600px;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 `;

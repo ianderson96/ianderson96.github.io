@@ -8,31 +8,47 @@ export const ContactWrapper = styled(ComponentWrapper)`
 
 export const ContactCardWrapper = styled.div`
   margin-top: 15px;
-  background-color: white;
-  box-shadow: 0px 18px 35px rgba(0, 0, 0, 0.16);
-  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 
 export const ContactTextWrapper = styled.div`
-  padding-left: 30px;
-  padding-right: 30px;
-
-  @media (min-width: 1200px) { 
-    padding-top: 100px;
-   }
+  flex: 100%;
+  text-align: center;
+  word-wrap: break-word;
 `;
 
 export const ContactText = styled.h3`
-  font-size: 36px;
+  font-size: 30px;
   color: ${primaryColor};
-  line-height: 80px;
-  font-weight: bold;
+  font-weight: 400;
+  margin: 20px 0px 0px 0px;
+  padding: 0px;
+`;
+
+export const LargeContactText = styled(ContactText)`
+  font-size: 40px;
+  font-weight: 700;
   margin: 0px;
+`;
+
+export const ContactLink = styled.a`
+  font-size: 30px;
+  color: ${primaryColor};
+  font-weight: 700;
+  margin: 20px 0px 0px 0px;
   padding: 0px;
 `;
 
 export const PhotoImage = styled.img`
-  object-fit: scale-down;
-  height: 100%;
-  width: 100%;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: solid 8px ${primaryColor};
+`;
+
+export const ArrowImage = styled.img`
+  height: 70px;
+  margin-top: 20px;
 `;

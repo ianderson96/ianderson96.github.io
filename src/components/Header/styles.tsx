@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { DoubleColumn, Column } from "../../views/styles";
+import { primaryColor } from "../../constants/colors";
 
 export const SmallHeaderText = styled.p`
   font-size: 28px;
@@ -19,7 +20,7 @@ export const LargeHeaderText = styled.span`
 `;
 
 export const NameText = styled(LargeHeaderText)`
-  color: #0c927a;
+  color: ${primaryColor};
   margin-top: 10px;
   background-color: white;
   padding-left: 3%;

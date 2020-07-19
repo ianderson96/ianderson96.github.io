@@ -23,7 +23,7 @@ const edXColor = "#00A0E3";
 const Jobs: React.FC = () => {
   return (
     <JobsWrapper>
-      <ComponentWrapper>
+      <ComponentWrapper color="white">
         <Row>
           <Column>
             <Rotate top left>

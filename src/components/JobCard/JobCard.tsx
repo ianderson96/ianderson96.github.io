@@ -7,7 +7,7 @@ import {
   CardTextWrapper,
   ShareIcon,
   ShareIconWrapper,
-  JobCardLink
+  JobCardLink,
 } from "./styles";
 import Share from "../../assets/share.png";
 
@@ -19,7 +19,7 @@ type JobCardProps = {
   url: string;
 };
 
-const JobCard: React.FC<JobCardProps> = props => {
+const JobCard: React.FC<JobCardProps> = (props) => {
   const { jobTitle, position, timeFrame, color, url } = props;
   const [isShowing, setIsShowing] = useState(false);
   return (

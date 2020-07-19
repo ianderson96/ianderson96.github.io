@@ -1,20 +1,26 @@
 import posed from "react-pose";
 import styled from "styled-components";
-import { primaryColor } from "../../constants/colors";
 
 const projectCardProps = {
-  open: { color: "#FFFFFF", background: primaryColor, paddingBottom: 50 },
-  closed: { color: primaryColor, background: "#FFFFFF", paddingBottom: 15 }
+  open: {
+    color: "#FFFFFF",
+    background: ({ color }) => color,
+    paddingBottom: 50,
+  },
+  closed: {
+    color: ({ color }) => color,
+    background: "#FFFFFF",
+    paddingBottom: 15,
+  },
 };
 
 export const ProjectCardWrapper = styled(posed.div(projectCardProps))`
   margin-top: 15px;
   padding-top: 15px;
   padding-left: 50px;
-  background-color: white;
   box-shadow: 0px 18px 35px rgba(0, 0, 0, 0.16);
   &:hover {
-    cursor: ${(props) => props.pose == 'open' ? 'default' : 'pointer'};
+    cursor: ${(props) => (props.pose === "open" ? "default" : "pointer")};
   }
 `;
 
@@ -44,7 +50,7 @@ export const CardLink = styled.a`
   color: white;
   text-decoration: none;
   &:hover {
-      text-decoration: underline;
-      cursor: pointer !important;
+    text-decoration: underline;
+    cursor: pointer !important;
   }
 `;

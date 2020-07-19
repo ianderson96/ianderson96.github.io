@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { primaryColor } from "../../constants/colors";
 
 export interface ShareIconProps {
-    show: boolean;
-  }
+  show: boolean;
+}
 
 export const JobCardWrapper = styled.div`
   margin-top: 15px;
@@ -21,7 +21,7 @@ export const JobCardLink = styled.a`
 
 export const JobTitle = styled.h3`
   font-size: 36px;
-  color: ${props => props.color || primaryColor};
+  color: ${(props) => props.color || primaryColor};
   line-height: 35px;
   font-weight: bold;
   margin: 0px;
@@ -30,7 +30,7 @@ export const JobTitle = styled.h3`
 
 export const CardText = styled.p`
   font-size: 18px;
-  color: ${props => props.color || primaryColor};
+  color: ${(props) => props.color || primaryColor};
   line-height: 20px;
   margin: 0px;
   padding: 0px;
@@ -41,14 +41,14 @@ export const CardTextWrapper = styled.div`
 `;
 
 export const ShareIcon = styled.img`
-    width: 40px;
-    opacity: ${(props: ShareIconProps) => props.show ? '1' : `0`};
+  width: 40px;
+  opacity: ${(props: ShareIconProps) => (props.show ? "1" : `0`)};
 `;
 
 export const ShareIconWrapper = styled.div`
-    width: 100%;
-    text-align: right;
-    margin-bottom: -35px;
-    padding-right: 20px;
-    box-sizing: border-box;
+  width: 100%;
+  text-align: right;
+  margin-bottom: -35px;
+  padding-right: 20px;
+  box-sizing: border-box;
 `;
