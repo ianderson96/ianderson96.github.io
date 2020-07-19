@@ -5,7 +5,7 @@ import {
   ContactText,
   PhotoImage,
   ContactTextWrapper,
-  ContactWrapper
+  ContactWrapper,
 } from "./styles";
 import Photo from "../../assets/photo-ian.jpg";
 import Fade from "react-reveal/Fade";
@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
             <Column>
               <ContactTextWrapper>
                 <ContactText>get in touch!</ContactText>
-                <ContactText>anderson.ia@husky.neu.edu</ContactText>
+                <ContactText>anderson.ia@northeastern.edu</ContactText>
               </ContactTextWrapper>
             </Column>
             <Column>
