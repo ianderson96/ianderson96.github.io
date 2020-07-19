@@ -3,17 +3,18 @@ import {
   JobsWrapper,
   HeaderText,
   HeaderWrapper,
-  JobCardsWrapper
+  JobCardsWrapper,
 } from "./styles";
 import {
   ComponentWrapper,
   Row,
   Column,
-  DoubleColumn
+  DoubleColumn,
 } from "../../views/styles";
 import JobCard from "../JobCard/JobCard";
-import Rotate from 'react-reveal/Rotate';
+import Rotate from "react-reveal/Rotate";
 
+const wnColor = "#FF896B";
 const scoutColor = "#00A1B6";
 const cogoColor = "#69B343";
 const rpColor = "#EC403B";
@@ -31,32 +32,39 @@ const Jobs: React.FC = () => {
           </Column>
           <DoubleColumn>
             <JobCard
+              jobTitle="wellnested 🥚"
+              position="product engineering intern"
+              timeFrame="may 2020 - present"
+              color={wnColor}
+              url={"https://bewellnested.com/"}
+            />
+            <JobCard
               jobTitle="scout studio 🖌"
               position="studio member → tech director"
-              timeFrame="spring 2018 - present"
+              timeFrame="spring 2018 - spring 2020"
               color={scoutColor}
-              url={'https://web.northeastern.edu/scout/'}
+              url={"https://web.northeastern.edu/scout/"}
             />
             <JobCard
               jobTitle="cogo labs 🚀"
               position="web engineering intern"
               timeFrame="summer 2019"
               color={cogoColor}
-              url={'https://cogolabs.com'}
+              url={"https://cogolabs.com"}
             />
             <JobCard
               jobTitle="rightpoint 👉"
               position="developer co-op"
               timeFrame="summer & fall 2018"
               color={rpColor}
-              url={'https://rightpoint.com'}
+              url={"https://rightpoint.com"}
             />
             <JobCard
               jobTitle="edX 🎓"
               position="UX co-op"
               timeFrame="summer & fall 2017"
               color={edXColor}
-              url={'https://edx.org'}
+              url={"https://edx.org"}
             />
           </DoubleColumn>
         </Row>
