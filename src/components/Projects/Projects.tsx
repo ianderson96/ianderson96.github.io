@@ -5,7 +5,7 @@ import ProjectCard from "../ProjectCard/ProjectCard";
 import Rotate from "react-reveal/Rotate";
 
 const Projects: React.FC = () => {
-  const [activeProject, setActiveProject] = useState("butter");
+  const [activeProject, setActiveProject] = useState("scout");
 
   return (
     <ComponentWrapper>
@@ -16,6 +16,13 @@ const Projects: React.FC = () => {
           </Rotate>
         </HeaderColumn>
         <DoubleColumn>
+          <ProjectCard
+            title="scout website 🌐"
+            active={activeProject === "scout" ? true : false}
+            description="Scout is Northeastern's Student-Led Design Studio. As Technology Director, I spearheaded and acted as lead engineer on the initiative to create a brand new website to reflect how the organization has grown over the years. This project was both fun and challenging - our priority was to ensure that this site could be reliably used for years to come, and to allow future students to easily update the site's content and structure as needed."
+            clickFunction={() => setActiveProject("scout")}
+            url="https://sc-website.netlify.app/"
+          />
           <ProjectCard
             title="discover butter 🛵"
             active={activeProject === "butter" ? true : false}
