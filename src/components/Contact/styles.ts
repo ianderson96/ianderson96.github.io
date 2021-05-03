@@ -11,6 +11,9 @@ export const ContactCardWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  @media (max-width: 500px) {
+    width: 300px;
+  }
 `;
 
 export const ContactTextWrapper = styled.div`
@@ -25,12 +28,18 @@ export const ContactText = styled.h3`
   font-weight: 400;
   margin: 20px 0px 0px 0px;
   padding: 0px;
+  @media (max-width: 500px) {
+    font-size: 24px;
+  }
 `;
 
 export const LargeContactText = styled(ContactText)`
   font-size: 40px;
   font-weight: 700;
   margin: 0px;
+  @media (max-width: 500px) {
+    font-size: 30px;
+  }
 `;
 
 export const ContactLink = styled.a`
@@ -39,6 +48,9 @@ export const ContactLink = styled.a`
   font-weight: 700;
   margin: 20px 0px 0px 0px;
   padding: 0px;
+  @media (max-width: 500px) {
+    font-size: 24px;
+  }
 `;
 
 export const PhotoImage = styled.img`

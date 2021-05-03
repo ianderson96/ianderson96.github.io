@@ -33,7 +33,7 @@ const Jobs: React.FC = () => {
           <DoubleColumn>
             <JobCard
               jobTitle="wellnested 🥚"
-              position="product engineering intern"
+              position="product engineer & designer"
               timeFrame="may 2020 - present"
               color={wnColor}
               url={"https://bewellnested.com/"}

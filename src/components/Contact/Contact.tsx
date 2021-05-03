@@ -34,7 +34,7 @@ const Contact: React.FC = () => {
               Man who was struck by lightning seven times
             </ContactLink>
             <ContactText>
-              <b>email me:</b> anderson.ia@northeastern.edu
+              <b>email me:</b> andersonian21@gmail.com
             </ContactText>
           </ContactTextWrapper>
         </ContactCardWrapper>

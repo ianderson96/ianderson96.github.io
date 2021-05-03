@@ -64,6 +64,7 @@ export const ResumeLinkWrapper = styled.div`
    top: 0px
    padding: 20px 20px 20px 20px;
    background-color: ${primaryColor};
+   z-index: 3;
 `;
 
 export const ResumeLink = styled.a`

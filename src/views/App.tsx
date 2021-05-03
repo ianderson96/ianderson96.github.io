@@ -11,7 +11,7 @@ const App: React.FC = () => {
     <React.Fragment>
       <ResumeLinkWrapper>
         <ResumeLink target="_blank" href={Resume}>
-          📜 resume
+          <span role="img" aria-label="document">📜</span> resume
         </ResumeLink>
       </ResumeLinkWrapper>
       <Header />

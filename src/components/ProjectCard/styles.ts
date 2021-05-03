@@ -22,6 +22,9 @@ export const ProjectCardWrapper = styled(posed.div(projectCardProps))`
   &:hover {
     cursor: ${(props) => (props.pose === "open" ? "default" : "pointer")};
   }
+  @media (max-width: 500px) {
+    padding-left: 30px;
+  }
 `;
 
 export const Title = styled.h3`
@@ -40,6 +43,9 @@ export const CardText = styled.p`
   padding:0px
   padding-top: 50px;
   padding-right: 100px;
+  @media (max-width: 500px) {
+    padding-right: 30px;
+  }
 `;
 
 export const CardLink = styled.a`
